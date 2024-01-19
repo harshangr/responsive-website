@@ -12,6 +12,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 10px 0px;
+    margin-top: 15px;
 }
 
 a{
@@ -19,12 +20,19 @@ a{
     color: #009999;
     margin-right: 20px;
     font-size: 27px;
-    padding: 10px;
+    padding: 6px;
 }
 
 .nav-right{
     margin-top: 6px;
+    transition: 0.5s;
 }
+
+.nav-right a{
+  transition: 0.3s;
+}
+
+.nav-right input
 
 .main-div{
     background-image: url("benoit-gauzere-6CcoF7h9h-k-unsplash.jpg");
@@ -41,6 +49,13 @@ a{
     padding: 12px 15px;
     border: none;
     margin-top: 61px;
+}
+
+.hamburger{
+  display: none;
+  width: 10%;
+  background: none;
+  border: none
 }
 
 .btn{
@@ -103,14 +118,16 @@ a{
   .main-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 70px;
   }
   
   .single-image {
-    width: calc(25% - 20px); /* 25% width for each div with 20px margin on each side */
-    margin: 10px;
+    width: 21%;
+    margin: 20px;
     box-sizing: border-box;
+    margin-bottom: 25px;
   }
   
   .single-image figure {
@@ -128,4 +145,209 @@ a{
     margin-top: 10px;
     color: #999;
   }
-  
+
+  .main-last{
+     display: flex;
+     justify-content: space-between;
+  }
+
+  .page-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .btn-same{
+    background-color: #009999;
+    border: 2px solid #009999;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 40px;
+  }
+
+  .page-numbers{
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .anchor-numbers{
+    width: 63px;
+    height: 60px;
+    color:white;
+    text-align: center;
+    background-color: #009999;
+    border: 2px solid white;
+    border-radius: 9px;
+    margin: 0px 17px 0px 0px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    padding: 0px 15px;
+    margin: auto;
+    color: #000000;
+  }
+
+  .row1-left{
+    padding: 0px 61px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .right-footer-text{
+    text-align: right;
+  }
+
+  .row1-right{
+    padding: 0px 66px;
+    text-align: right;
+  }
+  .footer-left{
+    padding: 0px 60px;
+    margin: 0px 0px 60px 0px;
+  }
+
+  .footer-center{
+    padding: 0px 40px;
+    margin: 0px 0px 60px 0px;
+  }
+
+  .footer-right{
+    padding: 0px 25px;
+    margin: 0px 0px 60px 0px;
+    text-align: right;
+  }
+
+  .icon-list{
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .content-footer{
+    background-color: #e9e8e8;
+    width: 100%;
+  }
+
+  .footer-list li{
+    list-style-type: none;
+  }
+
+  .icon-list li{
+    list-style-type: none;
+    margin-right: 20px;
+    width: 40px;
+  }
+
+  .content-footer{
+    padding: 60px 0px 20px 0px;
+  }
+
+  .social-list{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px
+  }
+
+  @media only screen and (max-width: 991px) {
+    .hamburger{
+      display: block;
+      font-size: 28px;
+    }
+
+    .navright{
+      position: absolute;
+    }
+
+    .nav-right{
+      /* display: flex;
+      flex-direction: column; */
+      margin-top: 49px;
+      /* position: absolute;
+      left: 245px; */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-right a{
+      display: none;
+    }
+
+    .single-image{
+      width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1222px){
+  .single-image{
+    width: 26%;
+  }
+}
+
+@media only screen and (max-width: 1012px){
+  .single-image{
+    width: 44%;
+  }
+}
+
+@media only screen and (max-width: 734px){
+  .single-image{
+    width: 100%;
+  }
+
+  .main-images{
+    margin: ;
+  }
+
+  .page-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-numbers{
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 853px){
+  .row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .footer-left{
+    padding: 0px 0px;
+  }
+
+  .footer-right{
+   text-align: center;
+  }
+
+  /* .row1-left{
+    padding: 0px 0px;
+  } */
+
+  .row1-right{
+    text-align: center;
+  }
+}
