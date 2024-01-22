@@ -24,15 +24,13 @@ a{
 }
 
 .nav-right{
-    margin-top: 6px;
-    transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-right a{
-  transition: 0.3s;
+.nav-right li {
+  list-style-type: none;
 }
-
-.nav-right input
 
 .main-div{
     background-image: url("benoit-gauzere-6CcoF7h9h-k-unsplash.jpg");
@@ -55,7 +53,7 @@ a{
   display: none;
   width: 10%;
   background: none;
-  border: none
+  border: none;
 }
 
 .btn{
@@ -252,36 +250,40 @@ a{
     border-radius: 5px
   }
 
+  .menu{
+    display: none;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 991px) {
     .hamburger{
       display: block;
       font-size: 28px;
     }
 
-    .navright{
-      position: absolute;
-    }
-
     .nav-right{
-      /* display: flex;
-      flex-direction: column; */
-      margin-top: 49px;
-      /* position: absolute;
-      left: 245px; */
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1;
+      position: absolute;
+      display: none;
+      top: 80px;
+      right: 0;
+      flex-direction: column;
     }
 
-    .nav-right a{
+    .menu{
       display: none;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      transition: all 0.7s ease-out;
+    }
+
+    .menu li{
+      margin-bottom: 20px;
+    }
+
+    .nav-right li{
+      margin-bottom: 15px;
     }
 
     .single-image{
@@ -306,9 +308,9 @@ a{
     width: 100%;
   }
 
-  .main-images{
+  /* .main-images{
     margin: ;
-  }
+  } */
 
   .page-btn{
     display: flex;
